@@ -1,4 +1,4 @@
-package com.aedtrainer.aedtrainer;
+package com.aedtrainer;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

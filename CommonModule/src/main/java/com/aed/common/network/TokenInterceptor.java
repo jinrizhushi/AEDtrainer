@@ -1,12 +1,7 @@
 package com.aed.common.network;
 
 
-import android.text.TextUtils;
-
-import com.aed.common.network.common.Commons;
 import com.aed.common.tools.DeviceUtil;
-import com.aed.common.tools.MD5Utils;
-import com.aed.common.tools.UserInfoManager;
 
 import java.io.IOException;
 
@@ -44,14 +39,14 @@ public class TokenInterceptor implements Interceptor {
         Request.Builder requestBuilder = oldRequest.newBuilder();
         long time = System.currentTimeMillis();
         String password;
-        String aed;
-        if(!TextUtils.isEmpty( UserInfoManager.newInstance().getUID())){
-            password =  UserInfoManager.newInstance().getUID()+"||"+time+"||"+Commons.SALT_FOR_USER;
-            aed = UserInfoManager.newInstance().getUID()+"."+time+"."+ MD5Utils.md5Password(password);
-        }else {
-            password = time+"||"+Commons.SALT_FOR_USER;
-            aed = time+"."+ MD5Utils.md5Password(password);
-        }
+        String aed="";
+//        if(!TextUtils.isEmpty( UserInfoManager.newInstance().getUID())){
+//            password =  UserInfoManager.newInstance().getUID()+"||"+time+"||"+Commons.SALT_FOR_USER;
+//            aed = UserInfoManager.newInstance().getUID()+"."+time+"."+ MD5Utils.md5Password(password);
+//        }else {
+//            password = time+"||"+Commons.SALT_FOR_USER;
+//            aed = time+"."+ MD5Utils.md5Password(password);
+//        }
 
         if(oldRequest.body() instanceof FormBody){
             FormBody.Builder newFormBody = new FormBody.Builder();

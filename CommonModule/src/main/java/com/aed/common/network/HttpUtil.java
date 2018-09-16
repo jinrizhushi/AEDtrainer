@@ -2,12 +2,12 @@ package com.aed.common.network;
 
 import android.content.Context;
 
-import com.aed.common.BuildConfig;
 import com.aed.common.network.api.AccountApi;
 import com.aed.common.network.api.ClubApi;
 import com.aed.common.network.api.FeedApi;
 import com.aed.common.network.api.PublishApi;
 import com.aed.common.network.api.StoreApi;
+import com.aedtrainer.BuildConfig;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;

@@ -18,13 +18,13 @@ android {
         debug {
             versionNameSuffix "-debug"
             //获取服务器地址
-//            buildConfigField("String", "BASE_URL", "\"http://t.club.huashengtravel.com/\"")
-//            buildConfigField("Boolean", "ONLINE", "false")
+            buildConfigField("String", "BASE_URL", "\"http://t.club.huashengtravel.com/\"")
+            buildConfigField("Boolean", "ONLINE", "false")
             debuggable true
         }
         release {
-//            buildConfigField("String", "BASE_URL", "\"https://club.huashengtravel.com/\"")
-//            buildConfigField("Boolean", "ONLINE", "true")
+            buildConfigField("String", "BASE_URL", "\"https://club.huashengtravel.com/\"")
+            buildConfigField("Boolean", "ONLINE", "true")
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             debuggable false

@@ -26,7 +26,7 @@ public class CustomCachingGlideModule extends AppGlideModule {
         builder.setDiskCache(
                 new DiskLruCacheFactory( getStorageDirectory()+"/aed/GlideCache", diskCacheSizeBytes )
         );
-        LogUtils.d(TAG,getStorageDirectory()+"/aed/GlideDisk"+"--"+appRootPath);
+//        LogUtils.d(TAG,getStorageDirectory()+"/aed/GlideDisk"+"--"+appRootPath);
     }
 
     @Override

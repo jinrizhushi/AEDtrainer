@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_height">220dp</dimen>
+    <dimen name="tv_font">9sp</dimen>
+    <dimen name="tv_font_more">6sp</dimen>
+    <dimen name="btn_width">73dp</dimen>
+    <dimen name="btn_height">20dp</dimen>
+</resources>
